@@ -1,27 +1,93 @@
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Sukanta Roy</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body {
-                background-color: black;
-            }
+<html lang="en-US">
+    <!--<![endif]-->
 
-            p {
-                color: white;
-                margin-left: 40px;
-                font-family: "Lucida console";
-                font-size: 100px;
-            }
-        </style>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Sukanta Roy
+        </title><!-- Behavioral Meta Data -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"><!-- Core Meta Data -->
+        <meta content="index.html">
+        <link href="favicon.png" rel="shortcut icon" type="image/png">
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <!-- CSS -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'><!-- Styles -->
+        <link href="css/loader.css" rel="stylesheet" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->
+        <!-- Javascript -->
+
+        <script src="js/jquery.js"></script>
     </head>
     <body>
-        <div>
-            <p style="font-family: ">
-                <span>Nothing here. Work under progress.</span>
-            </p>
+        <div class="preloader">
+            <div class="loading">
+                <h2>
+                    Loading...
+                </h2>
+                <span class="progress"></span>
+            </div>
         </div>
+
+        <div class="wrapper">
+            <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
+                <li class="layer" data-depth="0.00">
+                </li>
+                <!-- BG -->
+
+                <li class="layer" data-depth="0.10">
+                    <div class="background">
+                    </div>
+                </li>
+
+                <!-- Hero -->
+
+                <li class="layer" data-depth="0.20">
+                    <div class="title">
+                        <h2>
+                            Sukanta Roy
+                        </h2>
+                        <span class="line"></span>
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="0.25">
+                    <div class="sphere">
+                        <img alt="sphere" src="images/sphere.png">
+                    </div>
+                </li>
+
+                <li class="layer" data-depth="0.30">
+                    <div class="hero">
+                        <h1 id="countdown">
+                            Personal resume website
+                        </h1>
+
+                        <p class="sub-title">
+                            Personal resume website
+                        </p>
+                        <p class="sub-title">
+                            Coming soon
+                        </p>
+                    </div>
+                </li>
+
+        <!-- Javascript -->
+        <script src="js/plugins.js"></script> 
+        <script src="js/jquery.countdown.min.js"></script> 
+        <script src="js/main.js"></script>
+
     </body>
 </html>
